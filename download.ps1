@@ -4,6 +4,7 @@ $argums="https://www.site.com/video_adress -f 299+140 -o %(title)s.%(ext)s" #IDK
 #If having problems with merging use separate files downloading "-f 299,140".
 #Slight change in naming template will allow you to merge videos & audios with youtube-dl after download is comlete.
 #"-o %(title)s.f%(format_id)s.%(ext)s"
+#youtube-dl https://www.site.com/video_adress -f 299+140 -o "%(title)s.%(ext)s" will do the trick. (") are necessary for powershell.
 $logfile="log.txt"
 $wait=30    #Decrease this if keeps on freezing, it is doubled on start it's not a mistake
 
