@@ -1,8 +1,8 @@
-#youtube-dl https://www.site.com/video_adress -f 299+140 -o %(title)s.%(ext)s
+#youtube-dl https://www.site.com/video_adress -f 299+140 -o %(title)s.%(ext)s   Run this after videos finish downloading
 $prog="youtube-dl.exe"
 $argums="https://www.site.com/video_adress -f 299,140 -o %(title)s.%(ext)s"
 $logfile="log.txt"
-$wait=30
+$wait=30    #Decrease this if keeps on freezing, it is doubled on start it's not a mistake
 
 function init {
     $proc=Start-Process $prog -ArgumentList $argums -PassThru -RedirectStandardOutput $logfile -WindowStyle Minimized
